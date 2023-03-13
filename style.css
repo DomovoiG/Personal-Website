@@ -1,14 +1,33 @@
-/* hero background image */
-.navbar {
-  text-decoration-color: black;
-}
-.bgimage {
+.home {
   height: 100vh;
-  background: url("profile_image.jpg");
+  background: url("home_image.jpg");
   background-size: cover;
   position: relative;
 }
-/* text css above hero image*/
+.about {
+  height: 100vh;
+  background: lightgray;
+  background-size: cover;
+  position: relative;
+}
+.previous_work {
+  height: 100vh;
+  background: lightgray;
+  background-size: cover;
+  position: relative;
+}
+.projects {
+  height: 100vh;
+  background: lightgray;
+  background-size: cover;
+  position: relative;
+}
+.contact {
+  height: 100vh;
+  background: lightgray;
+  background-size: cover;
+  position: relative;
+}
 .hero_title {
   font-size: 4.5rem;
 }
@@ -22,4 +41,49 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+.container {
+  width: 50vw;
+}
+.Profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 75%;
+}
+.Profile-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: larger;
+}
+.Profile-text::first-line {
+  font-weight: bold;
+}
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+  color: darkgreen;
+}
+.fab {
+  color: black;
+}
+/* footer styling */
+#footer {
+  background-color: gray;
+  text-align: center;
+}
+/* spacing on all sections */
+#contact {
+  padding-bottom: 4rem;
+}
+
+#skill-set {
+  list-style: lower-latin;
 }
