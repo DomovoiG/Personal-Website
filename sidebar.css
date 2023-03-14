@@ -1,0 +1,27 @@
+body {
+  padding-left: 150px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(105, 165, 131);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar a {
+  font-family: "Roboto", serif;
+  padding: 25px 8px 20px 50px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: black;
+}
