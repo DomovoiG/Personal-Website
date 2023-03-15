@@ -7,7 +7,7 @@ function submitForm() {
   console.log("Email: " + email.value);
 
   const message = document.getElementById("message");
-  console.log("Message: " + email.value);
+  console.log("Comment:  " + email.value);
 }
 //==================================================
 const contactPage = document.querySelector(".contact");
@@ -15,7 +15,6 @@ contactPage.style.marginRight = "auto";
 contactPage.style.marginLeft = "auto";
 contactPage.style.marginTop = "200px";
 contactPage.style.width = "50%";
-contactPage.style.backgroundColor = "rgb(20, 14, 39)";
 contactPage.style.paddingLeft = "100px";
 contactPage.style.paddingRight = "100px";
 contactPage.style.paddingTop = "30px";
@@ -32,22 +31,17 @@ header.style.textAlign = "center";
 
 const name = document.getElementById("name");
 name.style.fontFamily = "Roboto, serif";
-name.style.width = "400px";
-name.style.height = "25px";
+name.style.width = "375px";
+name.style.height = "20px";
 name.style.alignContent = "center";
 
 const email = document.getElementById("email");
 email.style.fontFamily = "Roboto, serif";
-email.style.width = "400px";
-email.style.height = "25px";
+email.style.width = "375px";
+email.style.height = "20px";
 
-const email = document.getElementById("phone-number");
-email.style.fontFamily = "Roboto, serif";
-email.style.width = "400px";
-email.style.height = "25px";
-
-const message = document.getElementById("message");
+const message = document.getElementById("comment");
 message.style.fontFamily = "Roboto, serif";
-message.style.width = "400px";
+message.style.width = "375px";
 message.style.paddingBottom = "75px";
 message.style.fontSize = "10px";

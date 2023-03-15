@@ -11,11 +11,11 @@
     />
     <link rel="stylesheet" href="sidebar.css" />
     <link rel="stylesheet" href="about.css" />
-    <script src="contact.js"></script>
     <script
       src="https://kit.fontawesome.com/077d231d62.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="contact.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -37,86 +37,55 @@
       </a>
     </div>
     <!-- contact section-->
-    <section id="contact">
-      <div class="container mt-3 contactContent">
-        <h1 class="text-center">Contact Me</h1>
+    <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
 
-        <div class="row mt-4">
-          <div class="col-lg-6">
-            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+          <div
+            style="
+              max-width: 100%;
+              overflow: hidden;
+              color: red;
+              width: 500px;
+              height: 500px;
+            "
+          >
             <div
-              style="
-                max-width: 100%;
-                overflow: hidden;
-                color: red;
-                width: 500px;
-                height: 500px;
-              "
+              id="embedmap-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
             >
-              <div
-                id="embedmap-canvas"
-                style="height: 100%; width: 100%; max-width: 100%"
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1Q-u_KV1X43KH6XcxAiPkGe82y_M&ie=UTF8&msa=0&output=embed&ll=45.55530897479651%2C-122.64380249999999&z=13"
               >
-                <iframe
-                  style="height: 100%; width: 100%; border: 0"
-                  frameborder="0"
-                  src="https://www.google.com/maps/d/u/0/embed?mid=1Q-u_KV1X43KH6XcxAiPkGe82y_M&ie=UTF8&msa=0&output=embed&ll=45.55530897479651%2C-122.64380249999999&z=13"
-                >
-                </iframe>
-              </div>
-              <a
-                class="googlemaps-html"
-                href="https://www.embed-map.com"
-                id="get-data-forembedmap"
-                >https://www.embed-map.com</a
-              >
+              </iframe>
             </div>
-          </div>
-
-          <div class="col-lg-6">
-            <!-- form fields -->
-            <form>
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                class="form-control form-control-lg"
-                placeholder="Name"
-                alt="name-input"
-                id="name"
-              />
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                class="form-control mt-3"
-                placeholder="Email"
-                alt="email-input"
-                id="email"
-              />
-              <label for="subject">Subject:</label>
-              <input
-                type="text"
-                class="form-control mt-3"
-                placeholder="Subject"
-                alt="subject-input"
-                id="subject"
-              />
-              <label for="comment">Comment:</label>
-              <div class="mb-3 mt-3">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  id="comment"
-                  name="text"
-                  placeholder="Comment"
-                ></textarea>
-              </div>
-            </form>
-            <button type="button" class="btn btn-success mt-3">
-              Contact Me
-            </button>
+            <a
+              class="googlemaps-html"
+              href="https://www.embed-map.com"
+              id="get-data-forembedmap"
+              >https://www.embed-map.com</a
+            >
           </div>
         </div>
+        <br />
+        <div class="contact" id="contact">
+          <form>
+            <label hidden for="name">name </label>
+            <input type="text" id="name" placeholder="Name" />
+            <label hidden for="email">email </label>
+            <input type="text" id="email" placeholder="Email" />
+
+            <label hidden for="comment"> comment </label>
+            <input type="text" id="comment" placeholder="Comment" /><br /><br />
+
+            <input type="submit" value="Submit" onclick="submitForm()" />
+          </form>
+        </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
