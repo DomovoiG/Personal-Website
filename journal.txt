@@ -1,0 +1,9 @@
+To start this project I got all of the basic boilerplate stuff down. I hadn’t decided exactly where I wanted to go yet, but  I had seen some portfolio style websites that are scrolling or single page websites. They seem pretty clean, and simple, so I’ll start there and move on from that. This first session is going to be brief until I make some choices on what to do next. 
+This is the same day, I’ve decided I like the single webpage style and I’m going to develop from there. I’ve also found some W3school content that I think will be useful. I’ll likely continue to use this website as a base for ideas. 
+My main page was created, and I  used a website heavily for inspiration, and I did use some of the code to see if I liked the way it looked. The only things I like were the ‘hero picture’ background. So I’m pretty sure everything else is going to have to go. Back to square one on the rest of the sections. But the top of the page looks great. 
+I can’t seem to find the website I used in my previous commit, not sure if the blog got taken down or I’m just not looking up the right thing in google. Also I’m struggling with the look of the website right now. Either the webpage is just really small and feels incomplete, or the sections don’t blend smoothly from one to another. I think I may switch to a multi page set up instead.
+I switched to a multi-page set up. It already seems much better. I found a sidebar setup on w3schools that I really like, so im also going to change to that over the topbar. Unlikely that this will change. 
+Final list of frameworks and tech used: Bootstrap, css, js, html.
+"https://kit.fontawesome.com/"
+https://fonts.googleapis.com/css?family=Roboto"077d231d62.js"
+
