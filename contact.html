@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
     <link rel="stylesheet" href="sidebar.css" />
-    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/077d231d62.js"
       crossorigin="anonymous"
@@ -39,45 +39,57 @@
     <!-- contact section-->
     <h1 class="text-center">Contact Me</h1>
     <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-    <div
-      style="
-        max-width: 100%;
-        overflow: hidden;
-        color: red;
-        width: 500px;
-        height: 500px;
-      "
-    >
-      <div
-        id="embedmap-canvas"
-        style="height: 100%; width: 100%; max-width: 100%"
-      >
-        <iframe
-          style="height: 100%; width: 100%; border: 0"
-          frameborder="0"
-          src="https://www.google.com/maps/d/u/0/embed?mid=1Q-u_KV1X43KH6XcxAiPkGe82y_M&ie=UTF8&msa=0&output=embed&ll=45.55530897479651%2C-122.64380249999999&z=13"
-        >
-        </iframe>
-      </div>
-      <a
-        class="googlemaps-html"
-        href="https://www.embed-map.com"
-        id="get-data-forembedmap"
-        >https://www.embed-map.com</a
-      >
-    </div>
-    <br />
+
     <div class="contact" id="contact">
+      <div class="map">
+        <div
+          style="
+            max-width: 100%;
+            overflow: hidden;
+            color: red;
+            width: 500px;
+            height: 500px;
+          "
+        >
+          <div
+            id="embedmap-canvas"
+            style="
+              height: 100%;
+              width: 100%;
+              max-width: 100%;
+              align-self: center;
+            "
+          >
+            <iframe
+              style="height: 100%; width: 100%; border: 0; align-self: center"
+              frameborder="0"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1Q-u_KV1X43KH6XcxAiPkGe82y_M&ie=UTF8&msa=0&output=embed&ll=45.55530897479651%2C-122.64380249999999&z=13"
+            >
+            </iframe>
+          </div>
+          <a
+            class="googlemaps-html"
+            href="https://www.embed-map.com"
+            id="get-data-forembedmap"
+            >https://www.embed-map.com</a
+          >
+        </div>
+      </div>
+      <br />
       <form>
         <label hidden for="name">name </label>
-        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="name" placeholder="Name" /> <br /><br />
         <label hidden for="email">email </label>
-        <input type="text" id="email" placeholder="Email" />
+        <input type="text" id="email" placeholder="Email" /><br /><br />
 
         <label hidden for="comment"> comment </label>
         <input type="text" id="comment" placeholder="Comment" /><br /><br />
 
-        <input type="submit" value="Submit" onclick="submitForm()" />
+        <input
+          type="submit"
+          value="Submit"
+          onclick="submitForm()"
+        /><br /><br />
       </form>
     </div>
   </body>
